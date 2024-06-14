@@ -1,0 +1,94 @@
+/* Estilos más llamativos y con funciones adicionales para la página de biotecnología */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #388E3C;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cambia de color al pasar el cursor sobre los enlaces */
+}
+
+section {
+    padding: 40px;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos adicionales para interactividad */
+.active {
+    border-bottom: 2px solid #ffd700; /* Agrega un borde inferior al enlace activo */
+}
+
+/* Efectos de animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    animation-name: slideIn;
+    animation-duration: 1s;
+}

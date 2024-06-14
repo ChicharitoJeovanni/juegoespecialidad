@@ -1,0 +1,201 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    border: 5px solid green; /* Ancho de 5px y color morado */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border: 5px solid green; /* Ancho de 5px y color morado */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenido {
+    display: flex;
+    padding: 2rem;
+    background-image: url('fondoUl.jpg');
+}
+
+.izquierda,
+.contenido-derecha {
+    flex: 1;
+    margin-bottom: 2rem; /* Mueve este estilo aquí para aplicarlo a ambos lados */
+}
+
+.division {
+    border-right: 1px solid #ccc;
+    margin: 0 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos específicos */
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
+    overflow: hidden; /* Esto ocultará cualquier contenido que se desborde */
+    margin-top: 1rem; /* Mueve este estilo aquí para que se aplique correctamente */
+}
+
+.gallery-carousel {
+    display: flex;
+    justify-content: flex-start; /* Mueve el contenido de la galería hacia la izquierda */
+    overflow-x: auto; /* Esto permitirá el desplazamiento horizontal si el contenido es más ancho que el contenedor */
+}
+
+.gallery-carousel img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .division {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        margin: 2rem 0;
+    }
+
+/* Resto de tus estilos... */
+
+.contenido-derecha {
+    /* Otros estilos... */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.contenido-derecha a, .contenido-derecha button {
+    display: inline-block;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.contenido-derecha a:hover, .contenido-derecha button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+/* Agrega una animación para el fondo */
+@keyframes moverFondo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Aplica la animación al fondo del header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border: 5px solid green; /* Ancho de 5px y color morado */
+    animation: moverFondo 20s linear infinite alternate; /* Aplica la animación al fondo */
+}
+.question {
+    background-color: white;
+    color: #333; /* Color del texto en las preguntas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.izquierda {
+    color: white; /* Color del texto en el contenido izquierdo */
+}
+
+.contenido-derecha {
+    color: white; /* Color del texto en el contenido derecho */
+}
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+body{
+  background: black;
+}
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: black;
+}
+header {
+    background-color: black; /* Fondo negro */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Para posicionar correctamente el logo */
+}
+
+.logo {
+    position: absolute;
+    top: 20px; /* Distancia desde arriba */
+    left: 20px; /* Distancia desde la izquierda */
+}
+
+.logo img {
+    width: 100px; /* Tamaño del logo */
+    height: auto; /* Mantener proporción de aspecto */
+}
+
+header h1 {
+    color: white; /* Color del texto */
+    margin-left: 350px; /* Mover el título hacia la izquierda */
+}
+.folletos {
+    width: 200px; /* Ancho deseado */
+    margin-left: auto; /* Mitad del ancho para centrarlo */
+    left: 50%; /* Centra horizontalmente */
+    /* Otros estilos... */
+}
+/* Ajusta la posición vertical según sea necesario */
+.folletos {
+    bottom: 20px; /* Distancia deseada desde el borde inferior */
+    /* Otros estilos... */
+}
+
+.fondoss img {
+    width: 100%; /* Asegura que la imagen llene completamente el contenedor */
+    height: auto; /* Mantén la proporción de aspecto */
+}
